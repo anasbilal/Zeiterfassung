@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontaktmanagement</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/kontakt.css">
+<!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+<!--<script src="js/jquery-1.12.4.js"></script> -->
+<!--<script src="/js/jquery-ui-1.12.1/jquery-ui.js"></script> -->
+<!--<script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>-->
+<script	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+</head>
+<body>
+	
+<form>
+		<h2>Neuer Kontakt</h2>
+		<fieldset>
+			<legend>Kontakt Daten</legend>
+			<ul>
+				<li>
+				<label>Anrede</label>
+				 <select id="anrede">
+					<option value="--" selected>--</option>
+					<option value="Herr">Herr</option>
+					<option value="Frau">Frau</option>
+					<option value="Mr.">Mr.</option>
+					<option value="Ms.">Ms.</option>
+				</select>
+				</li>
+				<li> 
+				<label>Vorname:</label>
+				<input type="text" id="vorname" name="vorname" />
+				</li>
+				<li> 
+				<label>Name:</label>
+				<input type="text" id="name" name="name" />
+				</li>
+				<li>
+				<label>Titel(z.B. Dr., Prof.):</label>
+				<input type="text" id="titel" name="titel" />
+				</li>
+				<li>
+				<label>Abschluss(z.B. WP, Dipl.-Kfm.):</label>
+				 <input	type="text" id="abschluss" name="abschluss" /> 
+				 </li>
+				<li>	
+				<label>Position:</label>
+				<input type="text" id="position" name="position" /> 
+				</li>
+				<li>
+				<label>Firma:</label>
+				<select id="firma">
+					<option value="--" selected>--</option>
+				</select>
+				</li>
+				<li>
+				<label>Letzter Kontakt am:</label>
+				<input type="text" id="letzterkontakt" name="letzter Kont." /> 
+				</li>
+				<li>	
+				<label>E-Mail:</label>
+				<input type="email" id="email" name="e_Mail" placeholder="name@email.com" /> 
+				</li>
+				<li>
+				<label>Fax:</label>
+				<input type="text" id="fax" name="fax" placeholder="0049 211-5180280"/> 
+				</li>
+				<li>
+				<label>Telefon geschäftl.:</label>
+				<input type="text" id="telefongeschaeftl" name="telefon gesch." placeholder="0049 211-5180280"/>
+				</li>
+				<li>
+				<label>Telefon mobil:</label>
+				<input type="text" id="telefonmob" name="telefon mob." />  
+				</li>
+				<li>	
+				<label>Telefon Zentrale:</label>
+				<input type="text" id="telefonZentrale" name="telefon zent." placeholder="0049 211-5180280"/> 
+				</li>
+				<li>
+				<label>Zusatzangabe Adresse:</label>
+				<input type="text" id="adresse" name="adresse" />
+				</li>
+				<li>
+				<label>Straße:</label>
+				<input type="text" id="strasse" name="strasse" /> 
+				</li>
+				<li>
+				<label>Hausnummer:</label>
+				<input type="text" id="hausnummer" name="hausnummer" /> 
+				</li>
+				<li>
+				<label>Ort:</label>
+				<input type="text" id="ort" name="ort" /> 
+				</li>
+				<li>
+				<label>PLZ:</label>
+				<input type="text" id="plz" name="plz" />
+				</li>
+				<li>
+				<label>Land:</label>
+				<input type="text" id="" name="land" /> 
+				</li>
+				<li>
+				<label>Verantwortlicher bei I-Advise:</label>
+				<select id="verantwortlich">
+					<option value="--" selected>--</option>
+				</select>
+				</li>
+				<li>
+				<label>Kennt auch:</label>
+				<select id="kenntauch" multiple></select>
+				</li>
+				<li>
+				<label>Kontaktqualität:</label>
+				<select id="kontaktqualitaet">
+					<option value="--" selected>--</option>
+					<option value="A">A (interessant, unbedingt dranbleiben)</option>
+					<option value="B">B (weiterhin regelmäßig Kontakt halten)</option>
+					<option value="C">C (nicht mehr ansprechen)</option>
+				</select> 
+				</li>
+				<li>
+				<label>Persönliche Bemerkung:</label>
+				<textarea rows="4" cols="50" id="persoenlichebemerkung"></textarea><br> 
+				</li>
+				<li>
+				<label>Kampagne:</label>
+				<select id="kampagne">
+					<option value="--" selected>--</option>
+					<option value="Weihnachtskarte">Weihnachtskarte</option>
+					<option value="E-Mail-Mailing">E-Mail-Mailing</option>
+					<option value="Post-Mailing">Post-Mailing</option>
+					<option value="Studie">Studie</option>
+					<option value="Artikel">Artikel</option>
+				</select> <br> 
+				</li>
+				<li>
+				<label>Erfolgte Kampagnen:</label>
+				<input type="text" id="erfolgtekamp" name="erfolgte Kamp." /> 
+				</li>
+				<li>
+				<label>Aktivitäten:</label>
+				<select id="aktivitaet">
+					<option value="--" selected>--</option>
+					<option value="Erstgespräch">Erstgespräch</option>
+					<option value="Folgegespräch">Folgegespräch</option>
+					<option value="Telefonat">Telefonat</option>
+					<option value="E-Mail">E-Mail</option>
+					<option value="Reminder 1 x jährlich">Reminder 1 x jährlich</option>
+					<option value="Reminder 2 x jährlich">Reminder 2 x jährlich</option>
+					<option value="Reminder 3 x jährlich">Reminder 3 x jährlich</option>
+					<option value="Reminder 4 x jährlich">Reminder 4 x jährlich</option>
+				</select>
+				</li>
+				<li>
+				<label>Datum:</label>
+				<input type="text" id="datum" name="datum" />  
+				</li>
+				<li>
+				<label>Freitext:</label>
+				<textarea rows="4" cols="50" id="freitext"></textarea> 
+				</li>
+				<li>
+				<label>Ansprechpartner:</label>
+				<input type="text" id="ansprechpartner" name="ansprechpartner" />
+				</li>
+				<li>
+				<label>Aktivitäten:</label>
+				<input type="text" id="erfolgteakt" name="erfolgte Akt" />
+				</li>
+			</ul>			
+	</fieldset>
+	<p>
+	<input type="button" id="btnSave" value="Speichern">
+	</p>
+	</form>
+	
+	<form action="logout" method="post">
+           <input id="logout" type="submit" value="abmelden">
+    </form>
+	
+	<script src="js/kontakt.js"></script>
+</body>
+</html>

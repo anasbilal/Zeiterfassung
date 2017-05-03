@@ -1,0 +1,176 @@
+div {
+	width: 900px;
+}
+label {
+    width: 15em;
+    display: block;
+    float: left;
+}
+form {
+	background: white;
+	border: 1px solid #f00;
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px #f00 inset;
+	padding: 0.5em 1em;
+}
+
+fieldset {
+	border: 1px solid #aaa;
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px #ddd inset;
+	margin: 0 0 1em 0;
+}
+
+legend {
+	background: white;
+	border: 1px solid #aaa;
+	border-radius: 0.5em;
+	box-shadow: 0 0 10px #ddd inset;
+	padding: 0.5em 1em;
+}
+
+form ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	-moz-column-count: 2;
+	-webkit-column-count: 2;
+	column-count: 1;
+}
+
+form li {
+	margin: 0;
+	padding: 0 0 0.5em 0;
+}
+
+form button {
+	color: red;
+	text-decoration: line-through;
+}
+
+form.percentage-100 button {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+.percentage-10 {
+	border-color: #f30;
+	box-shadow: 0 0 10px #f30 inset;
+}
+
+.percentage-20 {
+	border-color: #f60;
+	box-shadow: 0 0 10px #f60 inset;
+}
+
+.percentage-30 {
+	border-color: #f90;
+	box-shadow: 0 0 10px #f90 inset;
+}
+
+.percentage-40 {
+	border-color: #fc0;
+	box-shadow: 0 0 10px #fc0 inset;
+}
+
+.percentage-50 {
+	border-color: #ff0;
+	box-shadow: 0 0 10px #ff0 inset;
+}
+
+.percentage-60 {
+	border-color: #cf0;
+	box-shadow: 0 0 10px #cf0 inset;
+}
+
+.percentage-70 {
+	border-color: #9f0;
+	box-shadow: 0 0 10px #9f0 inset;
+}
+
+.percentage-80 {
+	border-color: #6f0;
+	box-shadow: 0 0 10px #6f0 inset;
+}
+
+.percentage-90 {
+	border-color: #3f0;
+	box-shadow: 0 0 10px #3f0 inset;
+}
+
+.percentage-100 {
+	border-color: #0f0;
+	box-shadow: 0 0 10px #0f0 inset;
+}
+
+.notice,
+.warning {
+	border-color: #f00;
+	border-radius: 0.5em;
+	box-shadow: 0 0 20px #f00 inset;
+	padding: 1em 2em;
+}
+
+.percentage-10 .notice {
+	border-color: #f30;
+	box-shadow: 0 0 20px #f30 inset;
+	padding: 1em 2em;
+}
+
+.percentage-20 .notice {
+	border-color: #f60;
+	box-shadow: 0 0 20px #f60 inset;
+	padding: 1em 2em;
+}
+
+.percentage-30 .notice {
+	border-color: #f90;
+	box-shadow: 0 0 20px #f90 inset;
+	padding: 1em 2em;
+}
+
+.percentage-40 .notice {
+	border-color: #fc0;
+	box-shadow: 0 0 20px #fc0 inset;
+	padding: 1em 2em;
+}
+
+.percentage-50 .notice {
+	border-color: #ff0;
+	box-shadow: 0 0 20px #ff0 inset;
+	padding: 1em 2em;
+}
+
+.percentage-60 .notice {
+	border-color: #cf0;
+	box-shadow: 0 0 20px #cf0 inset;
+	padding: 1em 2em;
+}
+
+.percentage-70 .notice {
+	border-color: #9f0;
+	box-shadow: 0 0 20px #9f0 inset;
+	padding: 1em 2em;
+}
+
+.percentage-80 .notice {
+	border-color: #6f0;
+	box-shadow: 0 0 20px #6f0 inset;
+	padding: 1em 2em;
+}
+
+.percentage-90 .notice {
+	border-color: #3f0;
+	box-shadow: 0 0 20px #3f0 inset;
+	padding: 1em 2em;
+}
+
+.percentage-100 .notice {
+	border-color: #0f0;
+	box-shadow: 0 0 20px #0f0 inset;
+	padding: 1em 2em;
+}
+
+input:invalid {
+	color: red;
+}

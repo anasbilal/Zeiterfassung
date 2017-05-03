@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontaktmanagement</title>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="css/kontakt.css">
+<!-- <link rel="stylesheet" href="css/jquery-ui.css"> -->
+<!--<script src="js/jquery-1.12.4.js"></script> -->
+<!--<script src="/js/jquery-ui-1.12.1/jquery-ui.js"></script> -->
+<!--  <script src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>-->
+<script	src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script> 
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+
+</head>
+<body>
+<form>
+<h2>Neue Firma</h2>
+		<fieldset>
+				<legend>Firma Daten</legend>
+				<ul>
+				<li>
+				<label>Name der Firma:</label>
+				<input type="text" id="firmaname" name="firmaname">
+				</li>
+				<li>
+				<label>Rechtsform:</label>
+				<input type="text" id="rechtsform" name="rechtsform" />
+				</li>
+				<li>
+				<label>Börsennotierung:</label>
+				<select style="width: 25%;" id="boersennotierung">
+					<option value="0" selected>(Please select an option)</option>
+					<option value="Ja" selected>Ja</option>
+					<option value="Nein" selected>Nein</option>
+				</select>
+				</li>
+				<li>
+				<label>Branche:</label>
+				<select style="width: 25%;" class="select-branche">
+					<option value="0" selected>(Please select an option)</option>
+				</select>
+				</li>
+				<li>
+				<label>Fondsvolumen:</label>
+				<input type="text" id="fondsvolumen" name="fondsvolumen" />
+				</li>
+				<li>
+				<label>Aktueller Berater:</label>
+				<input type="text"id="aktuellerberater" name="Aktueller Berater" />
+				</li>
+				<li>
+				<label>Letzter Kontakt am:</label>
+				<input type="text" id="letzterkontakt" name="letzter Kont." />
+				</li>
+				<li>
+				<label>E-Mail:</label>
+				<input type="email" id="email" name="eMail" placeholder="name@email.com" />
+				</li>
+				<li>
+				<label>Fax:</label>
+				<input type="text" id="fax" name="fax" placeholder="0049 211-5180280"/>
+				</li>
+				<li>
+				<label>Telefon geschäftl.:</label>
+				<input type="text" id="telefongesch" name="telefon gesch." placeholder="0049 211-5180280"/>
+				</li>
+				<!-- <li>
+				<label>Telefon mobil:</label>
+				<input type="text"	id="telefonmob" name="telefon mob." />
+				</li> -->
+				<li>
+				<label>Telefon Zentrale:</label>
+				<input type="text" id="telefonzent" name="telefon zent." placeholder="0049 211-5180280"/>
+				</li>
+				<li>
+				<label>Zusatzangabe Adresse:</label>
+				<input type="text" id="adresse" name="adresse" />
+				</li>
+				<li>
+				<label>Straße:</label>
+				<input type="text" id="strasse" name="strasse" />
+				</li>
+				<li>
+				<label>Hausnummer:</label>
+				<input type="text" id="hausnummer" name="hausnummer" />
+				</li>
+				<li>
+				<label>Ort:</label>
+				<input type="text" id="ort" name="ort" />
+				</li>
+				<li>
+				<label>PLZ:</label>
+				<input type="text" id="" name="plz" />
+				</li>
+				<li>
+				<label>Land:</label>
+				<input type="text" id="land" name="land" />
+				</li>
+				<li>
+				<label>Verantwortlicher bei	I-Advise:</label>
+				<select style="width: 25%;" class="select-mit">
+					<option value="0" selected>(Please select an option)</option>
+				</select>
+				</li>
+				<li>
+				<label>Kennt auch:</label>
+				<select style="width: 25%;" class="kennt-auch" multiple>
+					<option value="0" selected>(Please select an option)</option>
+				</select>
+				</li>
+				<li>
+				<label>Kontaktqualität:</label>
+				<select id="kontaktqualitaet">
+					<option value="0" selected>(Please select an option)</option>
+					<option value="A">A (interessant, unbedingt dranbleiben)</option>
+					<option value="B">B (weiterhin regelmäßig Kontakt halten)</option>
+				<option value="C">C (nicht mehr ansprechen)</option>
+				</select>
+				</li>
+				<!-- <li>
+				<label>Persönliche Bemerkung:</label>
+				<textarea rows="4" cols="50" id="bemerkung"></textarea>
+				</li> -->
+				<li>
+				<label>Kampagne:</label>
+				<select style="width: 25%;" class="select-kamp">
+					<option value="0" selected>(Please select an option)</option>
+				</select>
+				</li>
+				<li>
+				<label>Erfolgte Kampagnen:</label>
+				<input type="text" id="erfolgteKamp" name="erfolgte Kamp." />
+				</li>
+				<li>
+				<label>Aktivitäten:</label>
+				<select style="width: 25%;" class="select-akt">
+					<option value="0" selected>(Please select an option)</option>
+				</select>
+				</li>
+				<li>
+				<label>Datum:</label>
+				<input type="text" id="datum" name="datum" />
+				</li>
+				<li>
+				<label>Freitextfeld:</label>
+				<textarea rows="4" cols="50" id="freitext"></textarea>
+				</li>
+				<li>
+				<label>Ansprechpartner:</label>
+				<input type="text" id="ansprechpartner" name="ansprechpartner" />
+				</li>
+				<li>
+				<label>Aktivitäten:</label>
+				<input type="text" id="erfolgteakt" name="erfolgte Akt" />
+				</li>
+				</ul>
+	</fieldset>
+	<p>
+	<input type="button" id="btnSave" value="Speichern">
+	</p>
+	</form>
+	
+	<script src="js/firma.js"></script>
+	</body>
+	</html>
+		

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>I-ADVISE|Die I-ADVISE AG</title>
+<meta content="noindex, nofollow" name="robots">
+<link href="css/registration.css" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+<br>
+<img id="logo" src=http://www.i-advise.de/de/wp-content/themes/i-advise/images/logo_iAdvise.png>  
+<div id="main">
+<!-- Create Div First For Login Form -->
+<div id="first">
+<!--  <form action="" method="post">-->
+<form id="anmeldeform" action="login" method="post">
+<h3>Melden Sie sich an.</h3>
+<input name="username" placeholder="Username" type="text" id="username">
+<input name="loginpassword" id="loginpassword" placeholder="Passwort" type="password">
+<!--  <input id="login" type="button" value="anmelden">-->
+<input id="login" type="submit" value="anmelden">
+</form>
+<p id="two">Sie haben noch keinen account? <a class="signup" href="#" id="signup">registrieren</a></p>
+
+</div>
+<!-- Create Div Second For Signup Form-->
+<div id="second">
+<!--  <form action="" id="form" method="post" name="form">-->
+<form id="registerform">
+<h3>Erstellen Sie einen Account.</h3>
+<input id="vorname" placeholder="Vorname" type="text">
+<input id="nachname" placeholder="Nachname" type="text">
+<input id="registeremail" placeholder="Email" type="text">
+<input id="username" name="username" placeholder="Username" type="text">
+<input id="registerpassword" placeholder="Passwort" type="password">
+<input type="password" name="cpassword" id="cpassword" placeholder="Passwort bestaetigen">
+<input id="register" type="button" value="registrieren">
+<p id="two">Sind Sie schon registriert? <a class="signin" href="#" id="signin">anmelden</a></p>
+</form>
+</div>
+</div>
+<script src="js/registration.js"></script>
+</body>
+</html>
